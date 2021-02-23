@@ -1,16 +1,14 @@
 import time
 print("NUMBER THINKING")
 time.sleep(3)
-print(
-    "You have to think of a number. I will guess it. Enter h for a higher number, l for a lower one and c for a correct guess."
-)
+print("You have to think of a number. I will guess it. Enter h for a higher number, l for a lower one and c for a correct guess.")
 time.sleep(3)
 while True:
 	upper = int(input("Enter your number limit: "))
 	time.sleep(3)
 	print("My guesses start here:")
 	time.sleep(1)
-	import random
+	import random 
 	x = 0
 	lower = 1
 	s = random.randint(lower, upper)
@@ -23,9 +21,7 @@ while True:
 		if y == "l":
 			upper = s - 1
 		if upper <= lower:
-			print(
-			    "You must have made a mistake in the previous questions. So, the game has ended!"
-			)
+			print("You must have made a mistake in the previous questions. So, the game has ended!")
 			break
 		s = random.randint(lower, upper)
 		print(s)
